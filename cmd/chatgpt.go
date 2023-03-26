@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/rexposadas/go-openai-cli/cmd/util/require"
+	"github.com/rexposadas/go-openai-cli/util/require"
 	"github.com/sashabaranov/go-openai"
 	"io"
 

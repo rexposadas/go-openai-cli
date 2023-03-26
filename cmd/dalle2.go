@@ -5,7 +5,8 @@ import (
 	"context"
 	"encoding/base64"
 	"fmt"
-	"github.com/rexposadas/go-openai-cli/cmd/util/require"
+	"github.com/rexposadas/go-openai-cli/util"
+	"github.com/rexposadas/go-openai-cli/util/require"
 	"github.com/sashabaranov/go-openai"
 	"image/png"
 	"os"
@@ -29,8 +30,8 @@ to quickly create a Cobra application.`,
 
 		// Sample image by link
 		reqUrl := openai.ImageRequest{
-			Prompt:         "Parrot on a skateboard performs a trick, cartoon style, natural light, high detail",
-			Size:           openai.CreateImageSize256x256,
+			Prompt:         util.DefaultImagePrompt,
+			Size:           util.DefaultImageSize(),
 			ResponseFormat: openai.CreateImageResponseFormatURL,
 			N:              1,
 		}
@@ -44,8 +45,8 @@ to quickly create a Cobra application.`,
 
 		// Example image as base64
 		reqBase64 := openai.ImageRequest{
-			Prompt:         "half human half machine, high detail, realistic light, unreal engine",
-			Size:           openai.CreateImageSize256x256,
+			Prompt:         util.DefaultImagePrompt,
+			Size:           util.DefaultImageSize(),
 			ResponseFormat: openai.CreateImageResponseFormatB64JSON,
 			N:              1,
 		}

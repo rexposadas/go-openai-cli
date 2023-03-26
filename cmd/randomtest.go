@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"context"
 	"fmt"
-	"github.com/rexposadas/go-openai-cli/cmd/util/require"
+	"github.com/rexposadas/go-openai-cli/util/require"
 	"io"
 	"log"
 	"os"
