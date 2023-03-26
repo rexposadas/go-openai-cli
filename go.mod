@@ -2,7 +2,10 @@ module github.com/rexposadas/go-openai-cli
 
 go 1.19
 
-require github.com/spf13/cobra v1.6.1
+require (
+	github.com/sashabaranov/go-openai v1.5.6
+	github.com/spf13/cobra v1.6.1
+)
 
 require (
 	github.com/inconshreveable/mousetrap v1.0.1 // indirect
